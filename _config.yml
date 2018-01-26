@@ -57,13 +57,13 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
+disqus_username: Hututu 
 
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 2f22a170928215448147   #生成的clientID
-  clientSecret: 05ad5aab53c278001bb27df825867626e88a937f  #同上
+  clientSecret: a2d91872e24fa9164074d2b31e17f4a4453bd984  #同上
   repo: tutu1234.github.io    #仓库名称
   owner: tutu1234    #github用户名
   admin: tutu1234 
