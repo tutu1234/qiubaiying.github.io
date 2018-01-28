@@ -1,5 +1,9 @@
 # Site settings
+<<<<<<< HEAD
 title:  Hututu  Blog
+=======
+title: Hututu Blog
+>>>>>>> 4d965f23c1a90fec87ed3c77c57ce7d93c496a17
 SEOTitle: 胡涂涂的博客 | Hututu Blog
 header-img: img/post-bg-desk.jpg
 email: hzktutu@gmail.com
