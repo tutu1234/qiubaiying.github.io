@@ -1,3 +1,14 @@
+---
+layout:     post
+title:      ubuntu server系统安装
+subtitle:   "\"OS install on a server\""
+date:       2018-01-29
+author:     Hututu
+header-img: img/post-bg-2015.jpg
+catalog: true
+tags:
+    - OS
+---
 ## ubuntu server系统安装
 ### 服务器的系统用`centos`还是`ubuntu`
 1. **`Ubuntu/Debian` 的优势**
