@@ -1,14 +1,10 @@
 # Site settings
-<<<<<<< HEAD
 title:  Hututu  Blog
-=======
-title: Hututu Blog
->>>>>>> 4d965f23c1a90fec87ed3c77c57ce7d93c496a17
 SEOTitle: 胡涂涂的博客 | Hututu Blog
 header-img: img/post-bg-desk.jpg
 email: hzktutu@gmail.com
 description: "Every failure is leading towards success."
-keyword: "huzhikun, huzhikun Blog, 胡涂涂的博客, deeplearning, blockchain, 胡志坤, CV, AI"
+keyword: "Hututu Blog, 胡涂涂的博客, deeplearning, blockchain, CV, AI, OS"
 url: "http://tutu1234.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/tutu1234/tutu1234.github.io.git" # you code repository
