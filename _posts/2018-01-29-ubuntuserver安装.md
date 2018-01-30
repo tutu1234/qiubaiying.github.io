@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      ubuntu server系统安装
-subtitle:   "\"OS install on a server\""
+subtitle:   OS install on a server
 date:       2018-01-29
 author:     Hututu
 header-img: img/post-bg-2015.jpg
