@@ -105,7 +105,6 @@ tags:
     # Define the data type of the placeholder
     input1 = tf.placeholder(tf.float32)
     input2 = tf.placeholder(tf.float32)
-    
     output = tf.multiply(input1,input2)
     ```
     - 使用session执行**喂**这个操作，使用`feed_dict={}`指定喂的变量
