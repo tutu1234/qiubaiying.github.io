@@ -25,11 +25,12 @@ CPU/Mem: htop, free, cat /proc/cpuinfo
 cat /sys/block/*/queue/rotational    （其中*为你的硬盘设备名称，例如sda等等），如果返回1则表示磁盘可旋转，那么就是HDD了
 ```
 - 准备好了机器，数据和框架，我们可以进行对比实验进行分析优化了，这就要求我们把实验结果规范地记录，什么时间，在什么条件下，做的什么实验，可以先分析不同的实验条件，根据条件不同，列出需要实验的表格，理清思路，比如：
-|实验 |sessinit        |structure   | loss |train_data |train_accu | test_accu |
-|-----| -------        | ----       | -----| --      |----       | ----      |
-|1    |imagenet_res18  | resnet18   | cross_entropy + l2_regularizer| all       |0.0        | 0.0       |
-|2    |None  | resnet18   | cross_entropy + l2_regularizer| all       |0.0        | 0.0       |
-|3    |imagenet_res18  | resnet18   | contrasive_loss + l2_regularizer| all       |0.0        | 0.0       |
+```
+实验   sessinit       structure    loss               accu
+1     imagenet_res18  resnet18    cross_entropy      0.0     
+2     None  		  resnet18    cross_entropy	  0.0
+3     imagenet_res18  resnet18    contrasive_loss    0.0
+```
 不同的实验的配置文件和脚本及产生的数据，分别以不同的实验条件来命名文件夹。文件结构如：
 ```
 antispoof/
