@@ -12,9 +12,9 @@ tags:
 
 > “🙉🙉🙉 ”
 
-![](../img/pangpang0.jpg)
-![](../img/pangpang1.jpg)
-![](../img/pangpang2.jpg)
-![](../img/pangpang3.jpg)
-![](../img/pangpang4.jpg)
+![](http://ww1.sinaimg.cn/large/8833244fgy1fswsixzrf7j22qf3nix6r.jpg)
+![](http://ww1.sinaimg.cn/large/8833244fgy1fswsixlql0j22qf3nib2b.jpg)
+![](http://ww1.sinaimg.cn/large/8833244fgy1fswsiwyh9rj22qf3nihdu.jpg)
+![](http://ww1.sinaimg.cn/large/8833244fgy1fswsiwdb6tj20u0142n0e.jpg)
+![](http://ww1.sinaimg.cn/large/8833244fgy1fswsixt25fj21401hcb29.jpg)
 
