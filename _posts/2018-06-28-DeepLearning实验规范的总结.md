@@ -9,10 +9,7 @@ catalog: true
 tags:
     - Deep Learning
 ---
-为无为，事无事，味无味，大小多少。报怨以德。
-图难于其易，为大于其细;
-天下难事，心作于易；天下大事，心作于细。
-——老子
+
 ### DeepLearning实验规范的关键点
 - DeepLearning是一门玄学，往往能得到十分出色的结果，但是达到产品应用的标准，需要大量的实验优化。
 - DeepLearning的做产品需要高质量的数据作为训练集，大量的数据覆盖所有情况，同时产品上线需要在公司QA的测试集达到好的结果，测试集不需要大量数据，不能和训练集有重合，但要覆盖所有情况，比如光照、场景、角度等，模型在训练集上刷高是必须的，但可能训练集中某些情况的数据覆盖的少，导致在QA测试集中识别错误，这个时候就需要在训练集中添加对应的样本不断迭代，这也是产品和竞赛的区别，竞赛的数据集是固定的，提高正确率的关键在模型设计和算法。
@@ -28,7 +25,7 @@ cat /sys/block/*/queue/rotational    （其中*为你的硬盘设备名称，例
 ```
 实验   sessinit       structure    loss               accu
 1     imagenet_res18  resnet18    cross_entropy      0.0     
-2     None  		  resnet18    cross_entropy	  0.0
+2     None            resnet18    cross_entropy	  0.0
 3     imagenet_res18  resnet18    contrasive_loss    0.0
 ```
 不同的实验的配置文件和脚本及产生的数据，分别以不同的实验条件来命名文件夹。文件结构如：
