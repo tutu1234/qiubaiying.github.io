@@ -46,6 +46,7 @@ tags:
 4. 安装之后的网络配置注意设置静态`IP`的过程：
 	- 获取`root`权限， `sudo -s`
 	- 设置`root`密码： ` passwd root`
+	- 安装vim： `sudo apt-get install vim`
 	- 配置网络文件: `vim /etc/network/interfaces`
 	```
     # The loopback network interface
@@ -65,7 +66,38 @@ tags:
     
 	- 设置`DNS`: `sudo vim /etc/resolv.conf`,插入`nameserver 8.8.8.8`
 	- 重启网络服务：`service networking restart 或者 /etc/init.d/networking restart`
-5. 远程访问服务器，开始体验吧！！！
+
+### 镜像源配置和软件安装
+1. 更换[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/),根据所在地区可以选择阿里云和中科大或者其他镜像源。
+```
+sudo cp /etc/apt/sources.list  /etc/apt/sources.list.bak
+sudo vim /etc/apt/sources.list 
+删除原文件内容并黏贴新的镜像源
+sudo update
+sudo upgrade
+```
+2. 安装配置tmux, htop, git等常用工具
+```
+安装：sudo apt-get install tmux htop git
+```
+配置：拷贝[vimrc](http://note.youdao.com/noteshare?id=57100eefbc9f03e1ba600a97dda0d2fa&sub=EFC46B0D72B549E19651C2D7BBDE924F),[.tmux.conf](http://note.youdao.com/noteshare?id=482f19185366941f2945778a89fb5824&sub=543AB1818AF34B7493D2EBA643340427)文件到主目录
+3. 安装anaconda
+```
+    sudo sh Anaconda3-5.0.1-Linux-x86_64
+    conda create -n py36 python=3.6
+    souece activate py36 (可加到.bashrc中)
+```
+5. 安装opencv(如3.2.0版本)
+    ```
+    unzip opencv-3.2.0.zip
+    cd opencv-3.2.0
+    mkdir build
+    cd build
+    cmake ..
+    sudo make -j8
+    sudo make install
+    sudo ldconfig
+    ```
 
 ### 引用
 > https://echohn.github.io/2016/02/03/server-os-choose-rhel-cenos-or-debian-ubuntu/
