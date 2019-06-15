@@ -52,7 +52,6 @@ tags:
     # The loopback network interface
     auto lo
     iface lo inet loopback
-
     # The primary network interface 注意替换网络接口名(ifconfig查看，每台机器不同)
     auto ens33
     iface ens33 inet static
@@ -88,6 +87,28 @@ sudo upgrade
     souece activate py36 (可加到.bashrc中)
 ```
 5. 安装opencv(如3.2.0版本)
+    - 安装基本编译工具：
+    ```
+    sudo apt-get install build-essential cmake pkg-config
+    ```
+    - 由于OpenCV是计算机视觉库，总需要加载一些图像文件（ JPEG, PNG, TIFF）。使用下面命令安装一些必要的图像库：
+    ```
+    sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
+    ```
+    - 除了图片之外，OpenCV还要处理视频文件。使用下面命令安装一些视频编解码库：
+    ```
+    sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+    sudo apt-get install libxvidcore-dev libx264-dev
+    ```
+    - OpenCV的GUI模块highgui依赖Gtk。安装gtk库：
+    ```
+    sudo apt-get install libgtk-3-dev
+    ```
+    - 下面安装一些可以提高OpenCV性能的库，如矩阵操作：
+    ```
+    sudo apt-get install libatlas-base-dev gfortran
+    ```
+
     ```
     unzip opencv-3.2.0.zip
     cd opencv-3.2.0
