@@ -86,6 +86,16 @@ sudo upgrade
     conda create -n py36 python=3.6
     souece activate py36 (可加到.bashrc中)
 ```
+4. 设置conda和pip的清华镜像源,参考[清华镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
+```
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+```
+```
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
 5. 安装opencv(如3.2.0版本)
     - 安装基本编译工具：
     ```
